@@ -1,0 +1,73 @@
+%Rubik-400 {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+}
+
+%orange-900 {
+  color: #FF6838;
+}
+
+%bg-hover {
+  background-color: #FF6838;
+}
+
+%outline {
+  outline-color: #FF6838;
+  border-radius: 5px;
+}
+
+%bg-focus {
+  background-color: #FFF2ED;
+  @extend %orange-900;
+}
+
+%title {
+  @extend %darkBlue-900;
+  font-size: 36px;
+  font-weight: 500;
+}
+
+%silver-200 {
+  color: #ececec;
+}
+
+%silver-100 {
+  color: #F9FAFF;
+}
+
+%gray {
+  color: #c2c2c2;
+}
+
+%darkBlue-900 {
+  color: #363853;
+}
+
+%dark {
+  color: #31352B;
+}
+
+%bg-main {
+ background-color: #F9FAFF;
+}
+
+%btn {
+  padding: 12px 32px;
+  background-color: #FF6838;
+  border-radius: 6px;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+}
+
+%btn-hover {
+  background-color: white;
+  @extend %orange-900;
+  @extend %outline;
+}
+
+%bg-img {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

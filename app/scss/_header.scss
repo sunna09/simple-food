@@ -1,0 +1,133 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 0;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__item {
+
+    &:not(:last-child) {
+      margin-right: 40px;
+    }
+
+    &:nth-child(3) {
+      margin-right: 50px;
+    }
+
+    &.active {
+      @extend %orange-900;
+    }
+  }
+
+  &__link {
+    font-size: 18px;
+    outline: 2px solid transparent;
+    border-radius: 5px;
+    transition: color 0.4s, text-shadow 0.4s, outline 0.4s ease-in;
+
+    &:hover {
+      @extend %orange-900;
+    }
+
+    &:focus {
+      @extend %outline;
+    }
+
+    &:active {
+      text-shadow: 2px 2px 5px rgba(49, 53, 43, 0.50);
+    }
+
+    
+    &.active {
+      @extend %orange-900;
+    }
+  }
+
+  &__bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-item {
+
+      &:not(:last-child) {
+        margin-right: 10px;
+      }
+    }
+    
+  &-link {
+    display: inline-flex;
+    position: relative;
+    width: 44px;
+    height: 44px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    outline: 2px solid transparent;
+    transition: background-color 0.3s, outline 0.3s ease-in-out;
+
+    &:hover {
+      @extend %bg-hover;
+      .nav__bar-icon {
+        stroke: white;
+      }
+      .nav__num {
+        @extend %orange-900;
+        
+        &::after {
+          background-color: white;
+        }
+      }
+    }
+
+    &:focus {
+      @extend %bg-focus;
+      @extend %outline;
+    }
+
+    &:active {
+      @extend %bg-focus;
+    }
+  }
+    
+  &-icon {
+    display: block;
+    width: 21px;
+    height: 21px;
+    stroke: #363853;
+    transition: stroke 0.4s ease-in-out;
+  }
+}
+
+  &__num {
+    position: absolute;
+    font-size: 10px;
+    padding: 1px;
+    color: white;
+    top: 0;
+    left: calc(50% - -7px);
+    color: white;
+    text-align: center;
+    z-index: 2;
+    transition: color 0.3s ease-in;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 7px;
+      left: calc(50% + -7px);
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      @extend %bg-hover;
+      z-index: -1;
+      transition: background-color 0.3s ease-in;
+    }
+  }
+}

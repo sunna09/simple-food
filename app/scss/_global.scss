@@ -1,0 +1,62 @@
+body {
+  font-family: 'Rubik-Regular', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+  color: #31352B;
+  @extend %bg-main;
+}
+
+.container {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 5px;
+}
+
+.logo {
+  display: block;
+  font-weight: 500;
+  font-size: 33px;
+  @extend %darkBlue-900; 
+  letter-spacing: 1.4px;
+  transition: opacity 0.4s, outline 0.4s ease-in;
+  outline: 2px solid transparent;
+  border-radius: 5px;
+  &__accent {
+    font-weight: 700;
+    width: 100%;
+    @extend %orange-900;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:focus {
+    @extend %outline;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+
+}
+
+.title {
+  @extend %title;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+

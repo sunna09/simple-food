@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Food | Доставка еды</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+<header class="header">
+  <div class="container">
+    <nav class="nav">
+      <a href="#main" class="logo">
+        <span class="logo__accent">Simple</span>Food
+      </a>
+      
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a class="nav__link" href="#main">
+            Главная
+          </a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#popular">
+            Блюда
+          </a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#contacts">
+            Контакты
+          </a>
+        </li>
+  
+        <ul class="nav__bar">
+          <li class="nav__bar-item">
+            <a class="nav__bar-link" href="search.html">
+              <svg class="nav__bar-icon">
+                <use href="./images/symbol-defs.svg#icon-search"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="nav__bar-item">
+            <a class="nav__bar-link" href="cart.html">
+              <svg class="nav__bar-icon">
+                <use href="./images/symbol-defs.svg#icon-cart"></use>
+              </svg>
+              <span class="nav__num">4</span>
+            </a>
+          </li>
+        </ul>
+      </ul>
+    </nav>
+  </div>
+</header>
+  <main class="main">
+    <section class="order" id="main">
+      <div class="container">
+        <div class="order__wrap">
+          <div class="order__content">
+            <h1 class="order__text">
+              Доставка <span class="order__accent">за 15 минут</span>
+            </h1>
+            <p class="order__describe">
+              Самый быстрый сервис доставки еды в вашем городе. 
+              Не уложимся в срок - доставка за наш счёт
+            </p>
+            <a class="order__btn" href="#">
+              Заказать
+            </a>
+            <a class="order__info" href="#">
+              Подробнее
+            </a>
+          </div>
+          <img class="order__img" src="images/scooter-guy.png" alt="курьер на мопеде">
+        </div>
+      </div>
+    </section>
+
+    <section class="popular" id="popular">
+      <div class="container">
+        <h2 class="title">
+          Популярные категории
+        </h2>
+        <div class="popular__wrap">
+          <ul class="popular__filter">
+            <li class="popular__item">
+              <svg class="popular__icon">
+                <use href="./images/symbol-defs.svg#icon-burger"></use>
+              </svg>
+              <button class="popular__btn popular__btn--burger" type="button" data-filter=".burger">
+                Бургеры
+              </button>
+            </li>
+            <li class="popular__item">
+              <svg class="popular__icon">
+                <use href="./images/symbol-defs.svg#icon-pizza"></use>
+              </svg>
+              <button class="popular__btn popular__btn--pizza" type="button" data-filter=".burger">
+                Пицца
+              </button>
+            </li>
+            <li class="popular__item">
+              <svg class="popular__icon">
+                <use href="./images/symbol-defs.svg#icon-sandwich"></use>
+              </svg>
+              <button class="popular__btn popular__btn--sandwich" type="button" data-filter=".burger">
+                Сендвичи
+              </button>
+            </li>
+            <li class="popular__item">
+              <svg class="popular__icon">
+                <use href="./images/symbol-defs.svg#icon-asian"></use>
+              </svg>
+              <button class="popular__btn popular__btn--asia" type="button" data-filter=".burger">
+                Азиатская кухня
+              </button>
+            </li>
+            <li class="popular__item">
+              <svg class="popular__icon">
+                <use href="./images/symbol-defs.svg#icon-set"></use>
+              </svg>
+              <button class="popular__btn popular__btn--set" type="button" data-filter=".burger">
+                Сеты
+              </button>
+            </li>
+          </ul>
+          <ul class="popular__list">
+            <li class="popular__inner">
+              <a href="product.html" class="product">
+                <img class="product__img" src="images/products/burger-s-salatom.jpeg" alt="чизбургер с листьями салата">
+                <span class="product__name">
+                  Чизбургер с листьями салата
+                </span>
+                <span class="product__price">
+                  160 <span class="product__currency">грн.</span>
+                </span>
+                <button class="product__btn">
+                  В корзину
+                </button>
+              </a>
+            </li>
+            <li class="popular__inner">
+              <a href="product.html" class="product">
+                <img class="product__img" src="images/products/bigburger.jpg" alt="чизбургер с листьями салата">
+                <span class="product__name">
+                  Бифбургер
+                </span>
+                <span class="product__price">
+                  190 <span class="product__currency">грн.</span>
+                </span>
+                <button class="product__btn">
+                  В корзину
+                </button>
+              </a>
+            </li>
+            <li class="popular__inner">
+              <a href="product.html" class="product">
+                <img class="product__img" src="images/products/royal-cheeseburger.jpeg" alt="чизбургер с листьями салата">
+                <span class="product__name">
+                  Королевский чизбургер
+                </span>
+                <span class="product__price">
+                  260 <span class="product__currency">грн.</span>
+                </span>
+                <button class="product__btn">
+                  В корзину
+                </button>
+              </a>
+            </li>
+            <li class="popular__inner">
+              <a href="product.html" class="product">
+                <img class="product__img" src="images/products/black-burger.jpeg" alt="чизбургер с листьями салата">
+                <span class="product__name">
+                  Черный гамбургер
+                </span>
+                <span class="product__price">
+                  199 <span class="product__currency">грн.</span>
+                </span>
+                <button class="product__btn">
+                  В корзину
+                </button>
+              </a>
+            </li>
+            <li class="popular__inner">
+              <a href="product.html" class="product">
+                <img class="product__img" src="images/products/chicken-burger.jpeg" alt="чизбургер с листьями салата">
+                <span class="product__name">
+                  Чикен бургер
+                </span>
+                <span class="product__price">
+                  180 <span class="product__currency">грн.</span>
+                </span>
+                <button class="product__btn">
+                  В корзину
+                </button>
+              </a>
+            </li>
+            <li class="popular__inner">
+              <a href="product.html" class="product">
+                <img class="product__img" src="images/products/burger-s-salatom.jpeg" alt="чизбургер с листьями салата">
+                <span class="product__name">
+                  Чизбургер с листьями салата
+                </span>
+                <span class="product__price">
+                  160 <span class="product__currency">грн.</span>
+                </span>
+                <button class="product__btn">
+                  В корзину
+                </button>
+              </a>
+            </li>
+            <li class="popular__inner">
+              <a href="product.html" class="product">
+                <img class="product__img" src="images/products/bigburger.jpg" alt="чизбургер с листьями салата">
+                <span class="product__name">
+                  Бифбургер
+                </span>
+                <span class="product__price">
+                  190 <span class="product__currency">грн.</span>
+                </span>
+                <button class="product__btn">
+                  В корзину
+                </button>
+              </a>
+            </li>
+            <li class="popular__inner">
+              <a href="product.html" class="product">
+                <img class="product__img" src="images/products/royal-cheeseburger.jpeg" alt="чизбургер с листьями салата">
+                <span class="product__name">
+                  Королевский чизбургер
+                </span>
+                <span class="product__price">
+                  260 <span class="product__currency">грн.</span>
+                </span>
+                <button class="product__btn">
+                  В корзину
+                </button>
+              </a>
+            </li>
+            <li class="popular__inner">
+              <a href="product.html" class="product">
+                <img class="product__img" src="images/products/black-burger.jpeg" alt="чизбургер с листьями салата">
+                <span class="product__name">
+                  Черный гамбургер
+                </span>
+                <span class="product__price">
+                  199 <span class="product__currency">грн.</span>
+                </span>
+                <button class="product__btn">
+                  В корзину
+                </button>
+              </a>
+            </li>
+            <li class="popular__inner">
+              <a href="product.html" class="product">
+                <img class="product__img" src="images/products/chicken-burger.jpeg" alt="чизбургер с листьями салата">
+                <span class="product__name">
+                  Чикен бургер
+                </span>
+                <span class="product__price">
+                  180 <span class="product__currency">грн.</span>
+                </span>
+                <button class="product__btn">
+                  В корзину
+                </button>
+              </a>
+            </li>
+          </ul>
+
+          <button class="popular__more">
+            Показать еще
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+ <script src="js/main.min.js"></script>
+</body>
+</html>
