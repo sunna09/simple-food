@@ -20,6 +20,7 @@
     "gulp-svgstore": "^9.0.0",
     "gulp-uglify": "^3.0.2",
     "jquery": "^3.7.1",
+    "mixitup": "^3.3.1",
     "sass": "^1.69.4",
     "svgstore": "^3.0.1"
   }
