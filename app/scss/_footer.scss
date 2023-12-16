@@ -1,0 +1,226 @@
+.footer {
+  padding-bottom: 60px;
+  border-bottom: 2px solid #c2c2c2;
+
+  &__wrap {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .form {
+    margin-right: 70px;
+    max-width: 200px;
+    width: 100%;
+    position: relative;
+  }
+
+  .logo {
+    margin-bottom: 30px;
+  }
+
+  &__input {
+    padding: 7px 15px;
+    border: 2px solid #c2c2c2;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    width: 100%;
+    outline: 2px solid transparent;
+    cursor: pointer;
+    transition: background-color 0.3s, outline 0.3s ease-in;
+    &::placeholder {
+      color: #c2c2c2;
+      font-size: 14px;
+      transition: color 0.4s ease-in;
+    }
+
+    &:hover {
+
+      &::placeholder {
+        color: black;
+      }
+    }
+
+    &:focus {
+      @extend %bg-focus;
+      @extend %outline;
+    }
+  }
+
+  &__icon {
+    width: 16px;
+    height: 16px;
+    stroke: #FF6838;
+    fill: white;
+    position: absolute;
+    left: 35px;
+    top: 80%;
+  }
+
+  &__btn {
+    @extend %btn;
+    padding: 7px 15px 7px 36px;
+    width: 100%;
+    font-size: 14px;
+    outline: 2px solid transparent;
+    transition: background-color 0.3s, color 0.3s, outline 0.3s ease-in;
+    &:hover {
+      background-color: white;
+      @extend %orange-900;
+      @extend %outline;
+    }
+
+    &:hover.footer__icon {
+      fill: #FF6838;
+      stroke: #FF6838;
+    }
+  }
+
+  &__list {
+    max-width: 250px;
+    width: 100%;
+    margin-right: 70px;
+
+    &:nth-child(2) {
+      max-width: 155px;
+      width: 100%;
+    }
+    &:nth-child(3) {
+      max-width: 85px;
+      width: 100%;
+    }
+    &:nth-child(4) {
+      max-width: 187px;
+      width: 100%;
+    }
+  }
+
+  &__item {
+    max-width: 190px;
+    width: 100%;
+    font-size: 18px;
+    letter-spacing: 0.18px;
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__link {
+    display: block;
+    transition: color 0.3s, outline 0.3s, text-shadow 0.3s ease-in;
+    &:hover {
+      @extend %orange-900;
+    }
+    &:focus {
+      @extend %outline;
+    }
+    &:active {
+      text-shadow: 2px 2px 5px rgba(49, 53, 43, 0.50);
+    }
+  }
+
+  .address {
+    
+    &__info {
+      font-size: 16px;
+      line-height: 200%;
+      position: relative;
+      padding-left: 28px;
+      display: block;
+      &:not(:last-child) {
+        margin-bottom: 15px;
+      }
+      &::after {
+        content: '';
+        position: absolute;
+        @extend %bg-img;
+        background-size: contain;
+        width: 20px;
+        height: 20px;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      &--location::after {
+        background-image: url('../images/icons/location.svg')
+      }
+
+      &--phone::after {
+        background-image: url('../images/icons/phone.svg')
+      }
+
+      &--mail::after {
+        background-image: url('../images/icons/email.svg')
+      }
+    }
+
+   &__item {
+    
+    &:not(:last-child) {
+      margin-right: 15px;
+    }
+   } 
+   &__list {
+    display: flex;
+    justify-content: flex-start;
+    align-self: center;
+   }
+
+
+   &__icon {
+      width: 23px;
+      height: 23px;
+      fill: #31352B;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 9px;
+      transition: fill 0.3s ease-in;
+    }
+
+    &__link {
+      position: relative;
+      &:hover {
+
+        &::after {
+          @extend %bg-hover;
+        }
+
+        .address__icon {
+          fill: white;
+        }
+      }
+
+      &:focus {
+
+        &::after {
+          background-color: #FFF2ED;
+          outline-color: #FF6838;
+        }
+      }
+      &:active {
+
+
+        &::after {
+          background-color: #FFF2ED;
+        }
+
+        .address__icon {
+          fill: #FF6838;
+        }
+
+      }
+      &::after {
+        content: '';
+        display: block;
+        width: 39px;
+        height: 39px;
+        border-radius: 50%;
+        background-color: #ececec;
+        outline: 2px solid transparent;
+        transition: background-color 0.3s, outline 0.3s ease-in;
+      }
+    }
+  }
+}
