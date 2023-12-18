@@ -45,6 +45,8 @@ body {
 
 .title {
   @extend %title;
+  @extend %Rubik-500;
+  font-weight: 500;
 }
 
 .sr-only {
